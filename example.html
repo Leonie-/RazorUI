@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Razor UI (Pixels)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Perform CSS reset -->
+	<link href="css/reset.css" rel="stylesheet">
+
+	<!-- Include Razor UI stylesheets -->
+	<link href="css/grid.css" rel="stylesheet"/>
+	<link href="css/grid-max-767.css" media="screen and (max-width:767px)" rel="stylesheet"/>
+	<link href="css/grid-min-768-max-979.css" media="screen and (min-width:768px) and (max-width:979px)" rel="stylesheet"/>
+    <link href="css/grid-min-980-max-1199.css" media="screen and (min-width:980px) and (max-width:1199px)" rel="stylesheet"/>
+	<link href="css/grid-min-1200.css" media="screen and (min-width:1200px)" rel="stylesheet"/>
+
+	<!-- Include your own stylesheets here, don't modify the Razor stylesheets -->
+	
+	<!-- The following CSS is for example purposes only and should not be included in your own projects -->
+	<style type="text/css">
+
+	.txtlft { text-align:left; }
+	.txtcen { text-align:center; }
+	.txtrgt { text-align:right; }
+
+	.fltlft { float:left; }
+	.fltrgt { float:right; }
+	.cl { clear:both; height:0px; font-size:0px; display:block; overflow:hidden; visibility:hidden;  }
+	
+	body { background-color:#878787; }
+		.container { overflow:hidden; margin:0 auto; background-color:#CCC; }	
+		.example-column { background-color:#fff; min-height:50px; height:auto !important; height:50px; }			
+		.example-column2 { background-color:#ddd; min-height:50px; height:auto !important; height:50px; }			
+		.top-hotel { height:150px; background-color:#0055FF; }
+		.other-hotel { height:50px; background-color:#552AFF; }
+	</style>
+	
+  </head>
+  <body>
+	<div class="container">
+		<!-- IMPORTANT!!! Each row should add up to 24 -->
+		<div class="row" id="top-hotels">
+		  <div class="grid3 other-hotel break-into-4-desktop break-into-2-tablet"></div>
+		  <div class="grid3 other-hotel break-into-4-desktop break-into-2-tablet"></div>
+          <div class="grid3 other-hotel break-into-4-desktop break-into-2-tablet"></div>
+		  <div class="grid3 other-hotel break-into-4-desktop break-into-2-tablet"></div>
+          <div class="grid3 other-hotel break-into-4-desktop break-into-2-tablet hidden-phone"></div>
+		  <div class="grid3 other-hotel break-into-4-desktop break-into-2-tablet hidden-phone"></div>
+		  <div class="grid3 other-hotel break-into-4-desktop hidden-tablet hidden-phone"></div>
+		  <div class="grid3 other-hotel break-into-4-desktop hidden-tablet hidden-phone"></div>
+		</div>
+        <div class="row" id="top-hotels">
+		  <div class="grid6 top-hotel break-into-2-tablet"></div>
+		  <div class="grid6 top-hotel break-into-2-tablet"></div>
+		  <div class="grid6 top-hotel break-into-2-tablet hidden-phone"></div>
+		  <div class="grid6 top-hotel break-into-2-tablet hidden-phone"></div>
+		</div>
+        <div class="row">
+		  <div class="grid24 example-column hidden-tablet hidden-desktop" style="background-color:#f00;">MOBILE ONLY</div>
+		</div>
+
+        <div class="row">
+		  <div class="grid24 example-column hidden-phone hidden-desktop" style="background-color:#00f; color:#fff;">TABLET ONLY</div>
+		</div>
+        <div class="row">
+		  <div class="grid24 example-column hidden-tablet hidden-phone" style="background-color:#0f0;">DESKTOP ONLY</div>
+		</div>
+		<div class="row">
+		  <div class="grid3 example-column"></div>
+		  <div class="grid12 example-column"></div>
+		  <div class="grid6 example-column"></div>
+		  <div class="grid3 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid1 example-column"></div>
+		  <div class="grid23 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid2 example-column"></div>
+		  <div class="grid22 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid3 example-column"></div>
+		  <div class="grid21 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid4 example-column"></div>
+		  <div class="grid20 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid5 example-column"></div>
+		  <div class="grid19 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid6 example-column"></div>
+		  <div class="grid18 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid7 example-column"></div>
+		  <div class="grid17 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid8 example-column"></div>
+		  <div class="grid16 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid9 example-column"></div>
+		  <div class="grid15 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid10 example-column"></div>
+		  <div class="grid14 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid11 example-column"></div>
+		  <div class="grid13 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid12 example-column"></div>
+		  <div class="grid12 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid6 example-column"></div>
+		  <div class="grid6 example-column"></div>
+		  <div class="grid6 example-column"></div>
+		  <div class="grid6 example-column"></div>
+		</div>
+		<div class="row">
+		  <div class="grid3 example-column"></div>
+		  <div class="grid3 example-column"></div>
+		  <div class="grid3 example-column"></div>
+		  <div class="grid3 example-column"></div>
+		  <div class="grid3 example-column"></div>
+		  <div class="grid3 example-column"></div>
+		  <div class="grid3 example-column"></div>
+		  <div class="grid3 example-column"></div>
+		</div>        
+	</div>
+  </body>
+</html>
