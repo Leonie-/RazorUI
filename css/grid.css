@@ -1,7 +1,7 @@
 /* Razor UI Grid by Leonie Kenyon */
 .container { width:950px; }
 	.row { width:960px; }
-	.row:after { clear:both; }
+	.row:after { display:block; clear:both; content:''; }
 		.grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11, .grid12, .grid13, .grid14, .grid15, .grid16, .grid17, .grid18, .grid19, .grid20, .grid21, .grid22, .grid23, .grid24 { float:left; min-height:1px; margin-right:10px; margin-bottom:10px; }
 		.grid24 { width:950px; }
 		.grid23 { width:910px; }
